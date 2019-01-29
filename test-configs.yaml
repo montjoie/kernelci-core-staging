@@ -695,6 +695,12 @@ device_types:
     class: arm-dtb
     boot_method: uboot
 
+  hsdk:
+    name: 'hsdk'
+    mach: arc
+    class: arc-dtb
+    boot_method: uboot
+
   synquacer_acpi:
     name: 'synquacer-acpi'
     mach: socionext
@@ -983,6 +989,9 @@ test_configs:
     test_plans: [boot]
 
   - device_type: sun8i_h3_orangepi_pc
+    test_plans: [boot]
+
+  - device_type: hsdk
     test_plans: [boot]
 
   - device_type: synquacer_acpi
